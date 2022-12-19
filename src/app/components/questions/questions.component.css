@@ -1,0 +1,30 @@
+.question-input {
+    padding: 1rem;
+    width: 25rem;
+}
+
+.question-container {
+    display: flex;
+    gap: 10px;
+}
+
+.question-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.question-item {
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    width: 25rem;
+}
+
+.question-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}

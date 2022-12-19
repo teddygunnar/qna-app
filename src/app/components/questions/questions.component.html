@@ -1,0 +1,19 @@
+    <h1>Questions</h1>
+
+<div class="question-container">
+    <input type="text" [value]="questionInput" placeholder="Ask any questions" class="question-input" (change)="onChangeInput($event)" />
+    <input type="button" value="Submit Question" (click)="submitQuestion()" />
+</div>
+
+<div *ngIf="questionArr.length === 0">
+    <h3>Try ask something...</h3>
+</div>
+
+<ul class="question-item-container">
+    <li *ngFor="let item of questionArr; let index = index" class="question-items">
+        <div class="question-item">
+            <span>{{index + 1}}. {{item}}</span>
+        </div>
+            <span>Delete</span>
+    </li>
+</ul>
